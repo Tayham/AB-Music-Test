@@ -304,28 +304,12 @@ namespace A_B_music_test
 
         private void aFileLocation(object sender, MouseButtonEventArgs e)
         {
-            try
-            {
-                Process.Start(@System.IO.Path.GetDirectoryName(aFile));
-            }
-            catch (Win32Exception win32Exception)
-            {
-                //The system cannot find the file specified...
-                Console.WriteLine(win32Exception.Message);
-            }
+            aMusic.openFileLocation();
         }
 
         private void bFileLocation(object sender, MouseButtonEventArgs e)
         {
-            try
-            {
-                Process.Start(@System.IO.Path.GetDirectoryName(bFile));
-            }
-            catch (Win32Exception win32Exception)
-            {
-                //The system cannot find the file specified...
-                Console.WriteLine(win32Exception.Message);
-            }
+            bMusic.openFileLocation();
         }
     }
 }

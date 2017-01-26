@@ -56,3 +56,72 @@ C:\Users\blueb\documents\visual studio 2015\Projects\A B music test\A B music te
 C:\Users\blueb\documents\visual studio 2015\Projects\A B music test\A B music test\bin\Debug\Microsoft.Practices.ServiceLocation.dll
 C:\Users\blueb\documents\visual studio 2015\Projects\A B music test\A B music test\bin\Debug\Microsoft.Practices.ServiceLocation.pdb
 C:\Users\blueb\documents\visual studio 2015\Projects\A B music test\A B music test\bin\Debug\Microsoft.Practices.ServiceLocation.xml
+C:\Users\blueb\Source\Repos\AB-Music-Test\A B music test\bin\Debug\A B music test.exe.config
+C:\Users\blueb\Source\Repos\AB-Music-Test\A B music test\obj\Debug\A B music test.exe
+C:\Users\blueb\Source\Repos\AB-Music-Test\A B music test\obj\Debug\A B music test.pdb
+C:\Users\blueb\Source\Repos\AB-Music-Test\A B music test\bin\Debug\A B music test.exe
+C:\Users\blueb\Source\Repos\AB-Music-Test\A B music test\bin\Debug\A B music test.pdb
+C:\Users\blueb\Source\Repos\AB-Music-Test\A B music test\bin\Debug\Microsoft.Expression.Drawing.dll
+C:\Users\blueb\Source\Repos\AB-Music-Test\A B music test\bin\Debug\Microsoft.Expression.Interactions.dll
+C:\Users\blueb\Source\Repos\AB-Music-Test\A B music test\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+C:\Users\blueb\Source\Repos\AB-Music-Test\A B music test\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+C:\Users\blueb\Source\Repos\AB-Music-Test\A B music test\bin\Debug\System.Windows.Interactivity.dll
+C:\Users\blueb\Source\Repos\AB-Music-Test\A B music test\bin\Debug\taglib-sharp.dll
+C:\Users\blueb\Source\Repos\AB-Music-Test\A B music test\bin\Debug\Xceed.Wpf.AvalonDock.dll
+C:\Users\blueb\Source\Repos\AB-Music-Test\A B music test\bin\Debug\Xceed.Wpf.AvalonDock.Themes.Aero.dll
+C:\Users\blueb\Source\Repos\AB-Music-Test\A B music test\bin\Debug\Xceed.Wpf.AvalonDock.Themes.Metro.dll
+C:\Users\blueb\Source\Repos\AB-Music-Test\A B music test\bin\Debug\Xceed.Wpf.AvalonDock.Themes.VS2010.dll
+C:\Users\blueb\Source\Repos\AB-Music-Test\A B music test\bin\Debug\Xceed.Wpf.DataGrid.dll
+C:\Users\blueb\Source\Repos\AB-Music-Test\A B music test\bin\Debug\Xceed.Wpf.Toolkit.dll
+C:\Users\blueb\Source\Repos\AB-Music-Test\A B music test\bin\Debug\Microsoft.Practices.ServiceLocation.pdb
+C:\Users\blueb\Source\Repos\AB-Music-Test\A B music test\bin\Debug\Microsoft.Practices.ServiceLocation.xml
+C:\Users\blueb\Source\Repos\AB-Music-Test\A B music test\bin\Debug\de\Microsoft.Expression.Drawing.resources.dll
+C:\Users\blueb\Source\Repos\AB-Music-Test\A B music test\bin\Debug\es\Microsoft.Expression.Drawing.resources.dll
+C:\Users\blueb\Source\Repos\AB-Music-Test\A B music test\bin\Debug\fr\Microsoft.Expression.Drawing.resources.dll
+C:\Users\blueb\Source\Repos\AB-Music-Test\A B music test\bin\Debug\it\Microsoft.Expression.Drawing.resources.dll
+C:\Users\blueb\Source\Repos\AB-Music-Test\A B music test\bin\Debug\ja\Microsoft.Expression.Drawing.resources.dll
+C:\Users\blueb\Source\Repos\AB-Music-Test\A B music test\bin\Debug\ko\Microsoft.Expression.Drawing.resources.dll
+C:\Users\blueb\Source\Repos\AB-Music-Test\A B music test\bin\Debug\ru\Microsoft.Expression.Drawing.resources.dll
+C:\Users\blueb\Source\Repos\AB-Music-Test\A B music test\bin\Debug\zh-Hans\Microsoft.Expression.Drawing.resources.dll
+C:\Users\blueb\Source\Repos\AB-Music-Test\A B music test\bin\Debug\zh-Hant\Microsoft.Expression.Drawing.resources.dll
+C:\Users\blueb\Source\Repos\AB-Music-Test\A B music test\bin\Debug\de\Microsoft.Expression.Interactions.resources.dll
+C:\Users\blueb\Source\Repos\AB-Music-Test\A B music test\bin\Debug\en\Microsoft.Expression.Interactions.resources.dll
+C:\Users\blueb\Source\Repos\AB-Music-Test\A B music test\bin\Debug\es\Microsoft.Expression.Interactions.resources.dll
+C:\Users\blueb\Source\Repos\AB-Music-Test\A B music test\bin\Debug\fr\Microsoft.Expression.Interactions.resources.dll
+C:\Users\blueb\Source\Repos\AB-Music-Test\A B music test\bin\Debug\it\Microsoft.Expression.Interactions.resources.dll
+C:\Users\blueb\Source\Repos\AB-Music-Test\A B music test\bin\Debug\ja\Microsoft.Expression.Interactions.resources.dll
+C:\Users\blueb\Source\Repos\AB-Music-Test\A B music test\bin\Debug\ko\Microsoft.Expression.Interactions.resources.dll
+C:\Users\blueb\Source\Repos\AB-Music-Test\A B music test\bin\Debug\ru\Microsoft.Expression.Interactions.resources.dll
+C:\Users\blueb\Source\Repos\AB-Music-Test\A B music test\bin\Debug\zh-Hans\Microsoft.Expression.Interactions.resources.dll
+C:\Users\blueb\Source\Repos\AB-Music-Test\A B music test\bin\Debug\zh-Hant\Microsoft.Expression.Interactions.resources.dll
+C:\Users\blueb\Source\Repos\AB-Music-Test\A B music test\bin\Debug\de\System.Windows.Interactivity.resources.dll
+C:\Users\blueb\Source\Repos\AB-Music-Test\A B music test\bin\Debug\en\System.Windows.Interactivity.resources.dll
+C:\Users\blueb\Source\Repos\AB-Music-Test\A B music test\bin\Debug\es\System.Windows.Interactivity.resources.dll
+C:\Users\blueb\Source\Repos\AB-Music-Test\A B music test\bin\Debug\fr\System.Windows.Interactivity.resources.dll
+C:\Users\blueb\Source\Repos\AB-Music-Test\A B music test\bin\Debug\it\System.Windows.Interactivity.resources.dll
+C:\Users\blueb\Source\Repos\AB-Music-Test\A B music test\bin\Debug\ja\System.Windows.Interactivity.resources.dll
+C:\Users\blueb\Source\Repos\AB-Music-Test\A B music test\bin\Debug\ko\System.Windows.Interactivity.resources.dll
+C:\Users\blueb\Source\Repos\AB-Music-Test\A B music test\bin\Debug\ru\System.Windows.Interactivity.resources.dll
+C:\Users\blueb\Source\Repos\AB-Music-Test\A B music test\bin\Debug\zh-Hans\System.Windows.Interactivity.resources.dll
+C:\Users\blueb\Source\Repos\AB-Music-Test\A B music test\bin\Debug\zh-Hant\System.Windows.Interactivity.resources.dll
+C:\Users\blueb\Source\Repos\AB-Music-Test\A B music test\bin\Debug\de\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\blueb\Source\Repos\AB-Music-Test\A B music test\bin\Debug\es\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\blueb\Source\Repos\AB-Music-Test\A B music test\bin\Debug\fr\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\blueb\Source\Repos\AB-Music-Test\A B music test\bin\Debug\hu\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\blueb\Source\Repos\AB-Music-Test\A B music test\bin\Debug\it\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\blueb\Source\Repos\AB-Music-Test\A B music test\bin\Debug\pt-BR\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\blueb\Source\Repos\AB-Music-Test\A B music test\bin\Debug\ro\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\blueb\Source\Repos\AB-Music-Test\A B music test\bin\Debug\ru\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\blueb\Source\Repos\AB-Music-Test\A B music test\bin\Debug\sv\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\blueb\Source\Repos\AB-Music-Test\A B music test\bin\Debug\zh-Hans\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\blueb\Source\Repos\AB-Music-Test\A B music test\obj\Debug\A B music test.csprojResolveAssemblyReference.cache
+C:\Users\blueb\Source\Repos\AB-Music-Test\A B music test\obj\Debug\MainWindow.g.cs
+C:\Users\blueb\Source\Repos\AB-Music-Test\A B music test\obj\Debug\App.g.cs
+C:\Users\blueb\Source\Repos\AB-Music-Test\A B music test\obj\Debug\A B music test_MarkupCompile.cache
+C:\Users\blueb\Source\Repos\AB-Music-Test\A B music test\obj\Debug\A B music test_MarkupCompile.lref
+C:\Users\blueb\Source\Repos\AB-Music-Test\A B music test\obj\Debug\App.baml
+C:\Users\blueb\Source\Repos\AB-Music-Test\A B music test\obj\Debug\MainWindow.baml
+C:\Users\blueb\Source\Repos\AB-Music-Test\A B music test\obj\Debug\ABresources.baml
+C:\Users\blueb\Source\Repos\AB-Music-Test\A B music test\obj\Debug\A B music test.g.resources
+C:\Users\blueb\Source\Repos\AB-Music-Test\A B music test\obj\Debug\A_B_music_test.Properties.Resources.resources
+C:\Users\blueb\Source\Repos\AB-Music-Test\A B music test\obj\Debug\A B music test.csproj.GenerateResource.Cache

@@ -101,7 +101,34 @@ namespace A_B_music_test
 
         private void Blind_Click(object sender, RoutedEventArgs e)
         {
-            //tabControl1.SelectedItem = blindTab;
+            tabControl1.SelectedItem = notBlindTab;
+            aHider.Visibility = Visibility.Visible;
+            bHider.Visibility = Visibility.Visible;
+            Random rnd = new Random();
+            int switchSelect = rnd.Next(0, 2);
+            switch (switchSelect)
+            {
+                case 0:
+                    Console.WriteLine("Case 0");
+                    aInfo_NB.Text = aMusic.metadata;
+                    bInfo_NB.Text = bMusic.metadata;
+                    aCover_NB.Source = aMusic.cover;
+                    bCover_NB.Source = bMusic.cover;
+                    aPlayer.Open(new Uri(aMusic.filePath));
+                    bPlayer.Open(new Uri(bMusic.filePath));
+                    break;
+                case 1:
+                    Console.WriteLine("Case 1");
+                    aMusic = new Music(bFile);
+                    bMusic = new Music(aFile);
+                    aInfo_NB.Text = aMusic.metadata;
+                    bInfo_NB.Text = bMusic.metadata;
+                    aCover_NB.Source = aMusic.cover;
+                    bCover_NB.Source = bMusic.cover;
+                    aPlayer.Open(new Uri(aMusic.filePath));
+                    bPlayer.Open(new Uri(bMusic.filePath));
+                    break;
+            }
         }
 
 
@@ -299,6 +326,10 @@ namespace A_B_music_test
         private void Back_NB_Click(object sender, RoutedEventArgs e)
         {
             tabControl1.SelectedItem = mainTab;
+            aHider.Visibility = Visibility.Collapsed;
+            bHider.Visibility = Visibility.Collapsed;
+            aMusic = new Music(aFile);
+            bMusic = new Music(bFile);
             stop();
         }
 
@@ -311,5 +342,16 @@ namespace A_B_music_test
         {
             bMusic.openFileLocation();
         }
+
+        private void aHider_Click(object sender, RoutedEventArgs e)
+        {
+            aHider.Visibility = Visibility.Collapsed;
+        }
+
+        private void bHider_Click(object sender, RoutedEventArgs e)
+        {
+            bHider.Visibility = Visibility.Collapsed;
+        }
+
     }
 }

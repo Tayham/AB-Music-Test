@@ -89,7 +89,7 @@ namespace A_B_music_test
 
         private void notBlind_Click(object sender, RoutedEventArgs e)
         {
-            tabControl1.SelectedItem = notBlindTab;
+            tabControl1.SelectedItem = player;
             aInfo_NB.Text = aMusic.metadata;
             bInfo_NB.Text = bMusic.metadata;
             aCover_NB.Source = aMusic.cover;
@@ -101,7 +101,7 @@ namespace A_B_music_test
 
         private void Blind_Click(object sender, RoutedEventArgs e)
         {
-            tabControl1.SelectedItem = notBlindTab;
+            tabControl1.SelectedItem = player;
             aHider.Visibility = Visibility.Visible;
             bHider.Visibility = Visibility.Visible;
             Random rnd = new Random();

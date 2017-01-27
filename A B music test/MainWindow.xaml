@@ -360,9 +360,8 @@
                 </Button>
             </Grid>
         </TabItem>
-        
-        <TabItem x:Name="notBlindTab" Margin="0" Visibility="Collapsed" ScrollViewer.VerticalScrollBarVisibility="Auto">
 
+        <TabItem x:Name="player" Margin="0" Visibility="Collapsed" ScrollViewer.VerticalScrollBarVisibility="Auto">
             <Grid Margin="0">
                 <Grid.RowDefinitions>
                     <RowDefinition Height="8*" />
@@ -442,7 +441,7 @@
                     
                         <Slider x:Name="aVolume" ValueChanged="aVolume_ValueChanged" Minimum="0" Maximum="1" Value="0.5" MaxWidth="500" Margin="35,0,35,20" RenderTransformOrigin="0.5,0.5" ToolTip="'A' Volume" Height="15" VerticalAlignment="Bottom"/>
 
-                        <RadioButton x:Name="aIndicator" Content="Play A First" IsChecked="True" Foreground="White" FontWeight="Bold" Width="100" Height="15" GroupName="Currently Playing" VerticalAlignment="Bottom" Padding="0" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+                        <RadioButton x:Name="aIndicator" Content="Play A First" IsChecked="True" Foreground="White" FontWeight="Bold" Width="100" Height="16" GroupName="Currently Playing" VerticalAlignment="Center" VerticalContentAlignment="Center" Padding="0" HorizontalContentAlignment="Center" HorizontalAlignment="Center"/>
 
                     </StackPanel>
 
@@ -459,11 +458,11 @@
                     </StackPanel>
                 </ScrollViewer>
 
-                <StackPanel x:Name="bControl" Grid.Column="1"  Grid.Row="1" VerticalAlignment="Center" Margin="0,15">
+                <StackPanel x:Name="bControl" Grid.Column="1"  Grid.Row="1" VerticalAlignment="Center" Margin="0,5">
 
                         <Slider x:Name="bVolume" ValueChanged="bVolume_ValueChanged" Minimum="0" Maximum="1" Value="0.5" MaxWidth="500" Margin="35,0,35,20" RenderTransformOrigin="0.5,0.5" ToolTip="'B' Volume" Height="15" VerticalAlignment="Bottom"/>
 
-                        <RadioButton x:Name="bIndicator" Content="Play B First" IsChecked="False" Foreground="White" FontWeight="Bold" Width="100" Height="15" GroupName="Currently Playing" VerticalAlignment="Bottom" Padding="0" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+                        <RadioButton x:Name="bIndicator" Content="Play B First" IsChecked="False" Foreground="White" FontWeight="Bold" Width="100" GroupName="Currently Playing" VerticalAlignment="Center" Padding="0" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Height="16"/>
 
                     </StackPanel>
 

@@ -124,3 +124,4 @@ C:\Users\blueb\Source\Repos\AB-Music-Test\A B music test\obj\Debug\ABresources.b
 C:\Users\blueb\Source\Repos\AB-Music-Test\A B music test\obj\Debug\A B music test.g.resources
 C:\Users\blueb\Source\Repos\AB-Music-Test\A B music test\obj\Debug\A_B_music_test.Properties.Resources.resources
 C:\Users\blueb\Source\Repos\AB-Music-Test\A B music test\obj\Debug\A B music test.csproj.GenerateResource.Cache
+C:\Users\blueb\Source\Repos\AB-Music-Test\A B music test\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll

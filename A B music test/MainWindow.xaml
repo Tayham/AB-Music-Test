@@ -428,7 +428,7 @@
 
                 <ScrollViewer x:Name="aScroll"  VerticalScrollBarVisibility="Auto">
                     
-                    <StackPanel x:Name="aDisplay_NB" Grid.Column="0" Margin="0,45,0,0" IsHitTestVisible="False">
+                    <StackPanel x:Name="aDisplay_NB" Grid.Column="0" Margin="0,45,0,0">
 
                         <Image x:Name="aCover_NB" Margin="34,15" Height="200" VerticalAlignment="Top"/>
 
@@ -450,7 +450,7 @@
 
                 <ScrollViewer x:Name="bScroll" VerticalScrollBarVisibility="Auto" Grid.Column="1">
 
-                    <StackPanel x:Name="bDisplay_NB" Grid.Column="1" Margin="0,45,0,0" IsHitTestVisible="False">
+                    <StackPanel x:Name="bDisplay_NB" Grid.Column="1" Margin="0,45,0,0">
 
                         <Image x:Name="bCover_NB" Margin="34,15" Height="200" VerticalAlignment="Top"/>
 

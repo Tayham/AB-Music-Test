@@ -324,7 +324,7 @@
                     </i:Interaction.Triggers>
                 </Button>
 
-                <Button x:Name="B" Style ="{StaticResource B Hover}" Content="B" Grid.Column="1" Grid.RowSpan="2" FontSize="96" FontWeight="Bold" ToolTip="Select Music File For &quot;B&quot;" Click="B_Click">
+                <Button x:Name="B" Style ="{StaticResource B Hover}" Content="B" Grid.Column="1" Grid.RowSpan="2" FontSize="96" FontWeight="Bold" ToolTip="Select Music File For &quot;B&quot;" Click="B_Click" d:IsHidden="True">
                     <Button.Foreground>
                         <SolidColorBrush Color="{DynamicResource darkColor}"/>
                     </Button.Foreground>
@@ -333,7 +333,7 @@
                     </Button.Background>
                 </Button>
 
-                <Button x:Name="A"  Style= "{StaticResource A Hover}"  Grid.Column="0" Grid.RowSpan="2" FontSize="96" FontWeight="Bold" ToolTip="Select Music File For &quot;A&quot;" Click="A_Click" Content="A" Margin="0">
+                <Button x:Name="A"  Style= "{StaticResource A Hover}"  Grid.Column="0" Grid.RowSpan="2" FontSize="96" FontWeight="Bold" ToolTip="Select Music File For &quot;A&quot;" Click="A_Click" Content="A" Margin="0" d:IsHidden="True">
                     <Button.Foreground>
                         <SolidColorBrush Color="{DynamicResource darkColor}"/>
                     </Button.Foreground>
@@ -342,7 +342,8 @@
                     </Button.Background>
                 </Button>
 
-                <Button x:Name="Blind" Style= "{StaticResource A Hover}"  Content="Blind" Visibility="Collapsed" Grid.Row="0" Grid.ColumnSpan="2" Background="#00000000" Click="Blind_Click" FontSize="48" ToolTip="Audio file information is NOT shown"/>
+                <Button x:Name="Blind" Style= "{StaticResource A Hover}"  Content="Blind" Visibility="Collapsed" Grid.Row="0" Grid.ColumnSpan="2" Background="#00000000" Click="Blind_Click" FontSize="48" ToolTip="To prevent listener bias audio file information is NOT shown and A/B is randomly assigned."/>
+                <!--<TextBlock x:Name="blindDescription" Grid.Row="0" Grid.ColumnSpan="2" Text="To prevent listener bias audio file information is NOT shown and A/B is randomly assigned." HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,125,0,0" Width="300" TextWrapping="Wrap" FontSize="14.667" TextAlignment="Center"/>-->
 
                 <Button x:Name="notBlind" Style= "{StaticResource B Hover}"  Grid.Row="1" Visibility="Collapsed"  Grid.ColumnSpan="2" Background="#00000000" Click="notBlind_Click" Content="Not Blind" FontSize="48" ToolTip="Audio file information is shown"/>
 
@@ -385,13 +386,13 @@
                     </Rectangle.Fill>
                 </Rectangle>
 
-                <Rectangle x:Name="bBack2_NB" Grid.Column="1" Grid.Row="1">
+                <Rectangle x:Name="bDarkBack_NB" Grid.Column="1" Grid.Row="1">
                     <Rectangle.Fill>
                         <SolidColorBrush Color="{DynamicResource bColorDark}"/>
                     </Rectangle.Fill>
                 </Rectangle>
 
-                <Rectangle x:Name="aBack2_NB" Grid.Column="0" Grid.Row="1">
+                <Rectangle x:Name="aDarkBack_NB" Grid.Column="0" Grid.Row="1">
                     <Rectangle.Fill>
                         <SolidColorBrush Color="{DynamicResource aColorDark}"/>
                     </Rectangle.Fill>

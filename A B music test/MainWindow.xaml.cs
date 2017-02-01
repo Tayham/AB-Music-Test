@@ -258,7 +258,7 @@ namespace A_B_music_test
             // their respective slider controls.
 
             aPlayer.Volume = aVolume.Value;
-            bPlayer.Volume = (double)bVolume.Value;
+            bPlayer.Volume = bVolume.Value;
         }
 
         public void InitTimer()
@@ -282,6 +282,10 @@ namespace A_B_music_test
 
                 if ((bool)aIndicator.IsChecked) //Switches from A to B
                 {
+                    if(bPlayer.Position >= bPlayer.NaturalDuration)
+                    {
+                        stop();
+                    }
                     aPlayer.Volume = 0;
                     aMusic.playing = false;
                     //bPlayer.Position = aPlayer.Position;
@@ -293,6 +297,10 @@ namespace A_B_music_test
                 }
                 else //Switches from B to A
                 {
+                    if (aPlayer.Position >= aPlayer.NaturalDuration)
+                    {
+                        stop();
+                    }
                     bPlayer.Volume = 0;
                     bMusic.playing = false;
                     //aPlayer.Position = bPlayer.Position;

@@ -78,30 +78,6 @@
                 </EasingDoubleKeyFrame>
             </DoubleAnimationUsingKeyFrames>
 
-            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="aDisplay">
-                <EasingDoubleKeyFrame KeyTime="0:0:0.7" Value="0">
-                    <EasingDoubleKeyFrame.EasingFunction>
-                        <QuarticEase EasingMode="EaseOut"/>
-                    </EasingDoubleKeyFrame.EasingFunction>
-                </EasingDoubleKeyFrame>
-            </DoubleAnimationUsingKeyFrames>
-
-            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="aDisplay">
-                <DiscreteObjectKeyFrame KeyTime="0:0:0.7" Value="{x:Static Visibility.Collapsed}"/>
-            </ObjectAnimationUsingKeyFrames>
-
-            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="bDisplay">
-                <EasingDoubleKeyFrame KeyTime="0:0:0.7" Value="0">
-                    <EasingDoubleKeyFrame.EasingFunction>
-                        <QuarticEase EasingMode="EaseOut"/>
-                    </EasingDoubleKeyFrame.EasingFunction>
-                </EasingDoubleKeyFrame>
-            </DoubleAnimationUsingKeyFrames>
-
-            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="bDisplay">
-                <DiscreteObjectKeyFrame KeyTime="0:0:0.7" Value="{x:Static Visibility.Collapsed}"/>
-            </ObjectAnimationUsingKeyFrames>
-
             <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="Blind">
                 <DiscreteObjectKeyFrame KeyTime="0:0:1" Value="{x:Static Visibility.Visible}"/>
             </ObjectAnimationUsingKeyFrames>
@@ -152,6 +128,26 @@
                     </EasingDoubleKeyFrame.EasingFunction>
                 </EasingDoubleKeyFrame>
             </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="aScroll">
+                <EasingDoubleKeyFrame KeyTime="0:0:0.7" Value="0">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <QuarticEase EasingMode="EaseOut"/>
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+            </DoubleAnimationUsingKeyFrames>
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="aScroll">
+                <DiscreteObjectKeyFrame KeyTime="0:0:0.7" Value="{x:Static Visibility.Collapsed}"/>
+            </ObjectAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="bScroll">
+                <EasingDoubleKeyFrame KeyTime="0:0:0.7" Value="0">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <QuarticEase EasingMode="EaseOut"/>
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+            </DoubleAnimationUsingKeyFrames>
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="bScroll">
+                <DiscreteObjectKeyFrame KeyTime="0:0:0.7" Value="{x:Static Visibility.Collapsed}"/>
+            </ObjectAnimationUsingKeyFrames>
         </Storyboard>
 
         <Storyboard x:Key="ABtoBlind_Reverse">
@@ -173,40 +169,6 @@
                     </EasingDoubleKeyFrame.EasingFunction>
                 </EasingDoubleKeyFrame>
             </DoubleAnimationUsingKeyFrames>
-
-            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="aDisplay">
-                <SplineDoubleKeyFrame KeyTime="0:0:1" Value="0"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:1.5" Value="1">
-                    <EasingDoubleKeyFrame.EasingFunction>
-                        <PowerEase EasingMode="EaseIn"/>
-                    </EasingDoubleKeyFrame.EasingFunction>
-                </EasingDoubleKeyFrame>
-            </DoubleAnimationUsingKeyFrames>
-
-            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="aDisplay">
-                <DiscreteObjectKeyFrame KeyTime="0:0:1">
-                    <DiscreteObjectKeyFrame.Value>
-                        <Visibility>Visible</Visibility>
-                    </DiscreteObjectKeyFrame.Value>
-                </DiscreteObjectKeyFrame>
-            </ObjectAnimationUsingKeyFrames>
-
-            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="bDisplay">
-                <SplineDoubleKeyFrame KeyTime="0:0:1" Value="0"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:1.5" Value="1">
-                    <EasingDoubleKeyFrame.EasingFunction>
-                        <PowerEase EasingMode="EaseIn"/>
-                    </EasingDoubleKeyFrame.EasingFunction>
-                </EasingDoubleKeyFrame>
-            </DoubleAnimationUsingKeyFrames>
-
-            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="bDisplay">
-                <DiscreteObjectKeyFrame KeyTime="0:0:1">
-                    <DiscreteObjectKeyFrame.Value>
-                        <Visibility>Visible</Visibility>
-                    </DiscreteObjectKeyFrame.Value>
-                </DiscreteObjectKeyFrame>
-            </ObjectAnimationUsingKeyFrames>
 
             <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="Blind">
                 <DiscreteObjectKeyFrame KeyTime="0:0:0.7" Value="{x:Static Visibility.Collapsed}"/>
@@ -241,6 +203,36 @@
                     </EasingDoubleKeyFrame.EasingFunction>
                 </EasingDoubleKeyFrame>
             </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="aScroll">
+                <SplineDoubleKeyFrame KeyTime="0:0:1" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1.5" Value="1">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <PowerEase EasingMode="EaseIn"/>
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+            </DoubleAnimationUsingKeyFrames>
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="aScroll">
+                <DiscreteObjectKeyFrame KeyTime="0:0:1">
+                    <DiscreteObjectKeyFrame.Value>
+                        <Visibility>Visible</Visibility>
+                    </DiscreteObjectKeyFrame.Value>
+                </DiscreteObjectKeyFrame>
+            </ObjectAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="bScroll">
+                <SplineDoubleKeyFrame KeyTime="0:0:1" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1.5" Value="1">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <PowerEase EasingMode="EaseIn"/>
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+            </DoubleAnimationUsingKeyFrames>
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="bScroll">
+                <DiscreteObjectKeyFrame KeyTime="0:0:1">
+                    <DiscreteObjectKeyFrame.Value>
+                        <Visibility>Visible</Visibility>
+                    </DiscreteObjectKeyFrame.Value>
+                </DiscreteObjectKeyFrame>
+            </ObjectAnimationUsingKeyFrames>
         </Storyboard>
 
     </Window.Resources>
@@ -284,26 +276,29 @@
                     </Rectangle.RenderTransform>
                 </Rectangle>
 
-                <StackPanel x:Name="aDisplay" Grid.Column="0" Grid.RowSpan="2" CanVerticallyScroll="True">
+                <ScrollViewer x:Name="aScroll" VerticalScrollBarVisibility="Auto" Grid.RowSpan="2">
+                    <StackPanel x:Name="aDisplay" Grid.Column="0" Grid.RowSpan="2">
 
-                    <Image x:Name="aCover" Margin="35,25,33,25" Height="250" VerticalAlignment="Top"/>
+                        <Image x:Name="aCover" Margin="35,25,33,25" Height="250" VerticalAlignment="Top"/>
 
-                    <TextBlock x:Name="aInfo"  TextWrapping="Wrap" Foreground="White" FontSize="16" FontWeight="Bold" Margin="35,25" Height="150"  ScrollViewer.CanContentScroll="True" TextAlignment="Center"/>
+                        <TextBlock x:Name="aInfo"  TextWrapping="Wrap" Foreground="White" FontSize="16" FontWeight="Bold" Margin="35,25" Height="150"  ScrollViewer.CanContentScroll="True" TextAlignment="Center"/>
 
-                    <Button x:Name="aReselect" Visibility="Collapsed" Content="Reselect" Height="36" Margin="105.5,0,104.5,10" VerticalAlignment="Bottom" Click="A_Click"/>
+                        <Button x:Name="aReselect" Content="Reselect" Height="36" Margin="105.5,0,104.5,75" VerticalAlignment="Bottom" Click="A_Click"/>
 
-                </StackPanel>
+                    </StackPanel>
+                </ScrollViewer>
 
-                <StackPanel x:Name="bDisplay" Grid.Column="1" Grid.RowSpan="2">
+                <ScrollViewer x:Name="bScroll" VerticalScrollBarVisibility="Auto" Grid.Column="1" Grid.RowSpan="2">
+                    <StackPanel x:Name="bDisplay" Grid.Column="1" Grid.RowSpan="2">
 
-                    <Image x:Name="bCover" Margin="35,25,33,25" Height="250" VerticalAlignment="Top"/>
+                        <Image x:Name="bCover" Margin="35,25,33,25" Height="250" VerticalAlignment="Top"/>
 
-                    <TextBlock x:Name="bInfo" TextWrapping="Wrap" Foreground="White" FontSize="16" FontWeight="Bold" Margin="35,25" Height="150"  ScrollViewer.CanContentScroll="True" TextAlignment="Center" VerticalAlignment="Center"/>
+                        <TextBlock x:Name="bInfo" TextWrapping="Wrap" Foreground="White" FontSize="16" FontWeight="Bold" Margin="35,25" Height="150"  ScrollViewer.CanContentScroll="True" TextAlignment="Center" VerticalAlignment="Center"/>
 
-                    <Button x:Name="bReselect" Visibility="Collapsed" Content="Reselect" Height="36" Margin="105.5,0,104.5,10" VerticalAlignment="Bottom" Grid.Column="1" Click="B_Click"/>
+                        <Button x:Name="bReselect" Content="Reselect" Height="36" Margin="105.5,0,104.5,75" VerticalAlignment="Bottom" Grid.Column="1" Click="B_Click"/>
 
-                </StackPanel>
-
+                    </StackPanel>
+                </ScrollViewer>
 
                 <Button x:Name="Confirm" BorderThickness="0" Content="Confirm" Grid.ColumnSpan="2" Grid.Row="1" Height="50" Margin="0,0,0,0" VerticalAlignment="Bottom" FontSize="29.333" Visibility="Collapsed" Panel.ZIndex="1">
                     <Button.RenderTransform>
@@ -426,7 +421,7 @@
 
 
 
-                <ScrollViewer x:Name="aScroll"  VerticalScrollBarVisibility="Auto">
+                <ScrollViewer x:Name="aScroll_P"  VerticalScrollBarVisibility="Auto">
 
                     <StackPanel x:Name="aDisplay_NB" Grid.Column="0" Margin="0,45,0,0">
 
@@ -448,7 +443,7 @@
 
 
 
-                <ScrollViewer x:Name="bScroll" VerticalScrollBarVisibility="Auto" Grid.Column="1">
+                <ScrollViewer x:Name="bScroll_P" VerticalScrollBarVisibility="Auto" Grid.Column="1">
 
                     <StackPanel x:Name="bDisplay_NB" Grid.Column="1" Margin="0,45,0,0">
 

@@ -139,7 +139,7 @@ namespace A_B_music_test
             // Configure open file dialog box 
             OpenFileDialog dlg = new OpenFileDialog();
             dlg.DefaultExt = "*.mp3; *.m4a; *.wma; *.flac"; // Default file extension 
-            dlg.Filter = "Music Files|*.mp3;*.m4a;*.wma;*.flac|All files (*.*)|*.*"; // Filter files by extension
+            dlg.Filter = "Music Files|*.mp3;*.m4a;*.wma;*.flac"; // Filter files by extension
             dlg.Multiselect = false;
 
             // Show open file dialog box 

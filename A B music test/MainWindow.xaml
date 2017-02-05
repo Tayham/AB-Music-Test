@@ -284,25 +284,25 @@
                     </Rectangle.RenderTransform>
                 </Rectangle>
 
-                    <StackPanel x:Name="aDisplay" Grid.Column="0" Grid.RowSpan="2" CanVerticallyScroll="True">
+                <StackPanel x:Name="aDisplay" Grid.Column="0" Grid.RowSpan="2" CanVerticallyScroll="True">
 
-                        <Image x:Name="aCover" Margin="35,25,33,25" Height="250" VerticalAlignment="Top"/>
+                    <Image x:Name="aCover" Margin="35,25,33,25" Height="250" VerticalAlignment="Top"/>
 
-                        <TextBlock x:Name="aInfo"  TextWrapping="Wrap" Foreground="White" FontSize="16" FontWeight="Bold" Margin="35,25" Height="150"  ScrollViewer.CanContentScroll="True" TextAlignment="Center"/>
+                    <TextBlock x:Name="aInfo"  TextWrapping="Wrap" Foreground="White" FontSize="16" FontWeight="Bold" Margin="35,25" Height="150"  ScrollViewer.CanContentScroll="True" TextAlignment="Center"/>
 
-                        <Button x:Name="aReselect" Visibility="Collapsed" Content="Reselect" Height="36" Margin="105.5,0,104.5,10" VerticalAlignment="Bottom" Click="A_Click"/>
+                    <Button x:Name="aReselect" Visibility="Collapsed" Content="Reselect" Height="36" Margin="105.5,0,104.5,10" VerticalAlignment="Bottom" Click="A_Click"/>
 
-                    </StackPanel>
+                </StackPanel>
 
                 <StackPanel x:Name="bDisplay" Grid.Column="1" Grid.RowSpan="2">
 
-                        <Image x:Name="bCover" Margin="35,25,33,25" Height="250" VerticalAlignment="Top"/>
+                    <Image x:Name="bCover" Margin="35,25,33,25" Height="250" VerticalAlignment="Top"/>
 
-                        <TextBlock x:Name="bInfo" TextWrapping="Wrap" Foreground="White" FontSize="16" FontWeight="Bold" Margin="35,25" Height="150"  ScrollViewer.CanContentScroll="True" TextAlignment="Center" VerticalAlignment="Center"/>
+                    <TextBlock x:Name="bInfo" TextWrapping="Wrap" Foreground="White" FontSize="16" FontWeight="Bold" Margin="35,25" Height="150"  ScrollViewer.CanContentScroll="True" TextAlignment="Center" VerticalAlignment="Center"/>
 
-                        <Button x:Name="bReselect" Visibility="Collapsed" Content="Reselect" Height="36" Margin="105.5,0,104.5,10" VerticalAlignment="Bottom" Grid.Column="1" Click="B_Click"/>
+                    <Button x:Name="bReselect" Visibility="Collapsed" Content="Reselect" Height="36" Margin="105.5,0,104.5,10" VerticalAlignment="Bottom" Grid.Column="1" Click="B_Click"/>
 
-                    </StackPanel>
+                </StackPanel>
 
 
                 <Button x:Name="Confirm" BorderThickness="0" Content="Confirm" Grid.ColumnSpan="2" Grid.Row="1" Height="50" Margin="0,0,0,0" VerticalAlignment="Bottom" FontSize="29.333" Visibility="Collapsed" Panel.ZIndex="1">
@@ -324,7 +324,7 @@
                     </i:Interaction.Triggers>
                 </Button>
 
-                <Button x:Name="B" Style ="{StaticResource B Hover}" Content="B" Grid.Column="1" Grid.RowSpan="2" FontSize="96" FontWeight="Bold" ToolTip="Select Music File For &quot;B&quot;" Click="B_Click" d:IsHidden="True">
+                <Button x:Name="B" Style ="{StaticResource B Hover}" Content="B" Grid.Column="1" Grid.RowSpan="2" FontSize="96" FontWeight="Bold" ToolTip="Select Music File For &quot;B&quot;" Click="B_Click">
                     <Button.Foreground>
                         <SolidColorBrush Color="{DynamicResource darkColor}"/>
                     </Button.Foreground>
@@ -333,7 +333,7 @@
                     </Button.Background>
                 </Button>
 
-                <Button x:Name="A"  Style= "{StaticResource A Hover}"  Grid.Column="0" Grid.RowSpan="2" FontSize="96" FontWeight="Bold" ToolTip="Select Music File For &quot;A&quot;" Click="A_Click" Content="A" Margin="0" d:IsHidden="True">
+                <Button x:Name="A"  Style= "{StaticResource A Hover}"  Grid.Column="0" Grid.RowSpan="2" FontSize="96" FontWeight="Bold" ToolTip="Select Music File For &quot;A&quot;" Click="A_Click" Content="A" Margin="0">
                     <Button.Foreground>
                         <SolidColorBrush Color="{DynamicResource darkColor}"/>
                     </Button.Foreground>
@@ -415,7 +415,7 @@
                         <SolidColorBrush Color="{DynamicResource aColor}"/>
                     </Button.Background>
                 </Button>
-                
+
                 <Button x:Name="Back_NB" Grid.Row="0" Style= "{StaticResource A Hover}"  Grid.Column="0" Height="45" Margin="10,10,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Width="65" ToolTip="Back" Click="Back_NB_Click" Background="#00DDDDDD" Panel.ZIndex="1">
                     <ed:BlockArrow Height="27" Orientation="Left" Width="45" HorizontalAlignment="Center" VerticalAlignment="Center">
                         <ed:BlockArrow.Fill>
@@ -427,24 +427,24 @@
 
 
                 <ScrollViewer x:Name="aScroll"  VerticalScrollBarVisibility="Auto">
-                    
+
                     <StackPanel x:Name="aDisplay_NB" Grid.Column="0" Margin="0,45,0,0">
 
                         <Image x:Name="aCover_NB" Margin="34,15" Height="200" VerticalAlignment="Top"/>
 
                         <TextBlock x:Name="aInfo_NB"  Text="aMeta" TextWrapping="Wrap" Foreground="White" FontSize="16" FontWeight="Bold" Margin="35,15"  ScrollViewer.CanContentScroll="True" TextAlignment="Center" ToolTip="Right Click to Open 'A' in Explorer" MouseRightButtonDown="aFileLocation"/>
-                        
+
                     </StackPanel>
-                    
+
                 </ScrollViewer>
-                
+
                 <StackPanel x:Name="aControl" Grid.Row="1" VerticalAlignment="Center" Margin="0,15">
-                    
-                        <Slider x:Name="aVolume" ValueChanged="aVolume_ValueChanged" Minimum="0" Maximum="1" Value="0.5" MaxWidth="500" Margin="35,0,35,20" RenderTransformOrigin="0.5,0.5" ToolTip="'A' Volume" Height="15" VerticalAlignment="Bottom"/>
 
-                        <RadioButton x:Name="aIndicator" Content="Play A First" IsChecked="True" Foreground="White" FontWeight="Bold" Width="100" Height="16" GroupName="Currently Playing" VerticalAlignment="Center" VerticalContentAlignment="Center" Padding="0" HorizontalContentAlignment="Center" HorizontalAlignment="Center"/>
+                    <Slider x:Name="aVolume" ValueChanged="aVolume_ValueChanged" Minimum="0" Maximum="1" Value="0.5" MaxWidth="500" Margin="35,0,35,20" RenderTransformOrigin="0.5,0.5" ToolTip="'A' Volume" Height="15" VerticalAlignment="Bottom"/>
 
-                    </StackPanel>
+                    <RadioButton x:Name="aIndicator" Content="Play A First" IsChecked="True" Foreground="White" FontWeight="Bold" Width="100" Height="16" GroupName="Currently Playing" VerticalAlignment="Center" VerticalContentAlignment="Center" Padding="0" HorizontalContentAlignment="Center" HorizontalAlignment="Center"/>
+
+                </StackPanel>
 
 
 
@@ -461,11 +461,11 @@
 
                 <StackPanel x:Name="bControl" Grid.Column="1"  Grid.Row="1" VerticalAlignment="Center" Margin="0,5">
 
-                        <Slider x:Name="bVolume" ValueChanged="bVolume_ValueChanged" Minimum="0" Maximum="1" Value="0.5" MaxWidth="500" Margin="35,0,35,20" RenderTransformOrigin="0.5,0.5" ToolTip="'B' Volume" Height="15" VerticalAlignment="Bottom"/>
+                    <Slider x:Name="bVolume" ValueChanged="bVolume_ValueChanged" Minimum="0" Maximum="1" Value="0.5" MaxWidth="500" Margin="35,0,35,20" RenderTransformOrigin="0.5,0.5" ToolTip="'B' Volume" Height="15" VerticalAlignment="Bottom"/>
 
-                        <RadioButton x:Name="bIndicator" Content="Play B First" IsChecked="False" Foreground="White" FontWeight="Bold" Width="100" GroupName="Currently Playing" VerticalAlignment="Center" Padding="0" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Height="16"/>
+                    <RadioButton x:Name="bIndicator" Content="Play B First" IsChecked="False" Foreground="White" FontWeight="Bold" Width="100" GroupName="Currently Playing" VerticalAlignment="Center" Padding="0" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Height="16"/>
 
-                    </StackPanel>
+                </StackPanel>
 
                 <ToggleButton x:Name="playPause" Checked="play" Unchecked="pause" Margin="36,0,0,0"  
                       Grid.Row="2" Grid.Column="0" HorizontalAlignment="Left" Width="45" Height="45" VerticalAlignment="Center" ToolTip="Right Click to Stop" MouseRightButtonUp="stop">

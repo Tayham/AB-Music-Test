@@ -90,10 +90,10 @@ namespace A_B_music_test
         private void notBlind_Click(object sender, RoutedEventArgs e)
         {
             tabControl1.SelectedItem = player;
-            aInfo_NB.Text = aMusic.metadata;
-            bInfo_NB.Text = bMusic.metadata;
-            aCover_NB.Source = aMusic.cover;
-            bCover_NB.Source = bMusic.cover;
+            aInfo_P.Text = aMusic.metadata;
+            bInfo_P.Text = bMusic.metadata;
+            aCover_P.Source = aMusic.cover;
+            bCover_P.Source = bMusic.cover;
             aPlayer.Open(new Uri(aMusic.filePath));
             bPlayer.Open(new Uri(bMusic.filePath));
 
@@ -110,10 +110,10 @@ namespace A_B_music_test
             {
                 case 0:
                     Console.WriteLine("Case 0");
-                    aInfo_NB.Text = aMusic.metadata;
-                    bInfo_NB.Text = bMusic.metadata;
-                    aCover_NB.Source = aMusic.cover;
-                    bCover_NB.Source = bMusic.cover;
+                    aInfo_P.Text = aMusic.metadata;
+                    bInfo_P.Text = bMusic.metadata;
+                    aCover_P.Source = aMusic.cover;
+                    bCover_P.Source = bMusic.cover;
                     aPlayer.Open(new Uri(aMusic.filePath));
                     bPlayer.Open(new Uri(bMusic.filePath));
                     break;
@@ -121,10 +121,10 @@ namespace A_B_music_test
                     Console.WriteLine("Case 1");
                     aMusic = new Music(bFile);
                     bMusic = new Music(aFile);
-                    aInfo_NB.Text = aMusic.metadata;
-                    bInfo_NB.Text = bMusic.metadata;
-                    aCover_NB.Source = aMusic.cover;
-                    bCover_NB.Source = bMusic.cover;
+                    aInfo_P.Text = aMusic.metadata;
+                    bInfo_P.Text = bMusic.metadata;
+                    aCover_P.Source = aMusic.cover;
+                    bCover_P.Source = bMusic.cover;
                     aPlayer.Open(new Uri(aMusic.filePath));
                     bPlayer.Open(new Uri(bMusic.filePath));
                     break;
@@ -331,7 +331,7 @@ namespace A_B_music_test
             switchDelay = (int)switchDelayInput.Value;
         }
 
-        private void Back_NB_Click(object sender, RoutedEventArgs e)
+        private void Back_P_Click(object sender, RoutedEventArgs e)
         {
             tabControl1.SelectedItem = mainTab;
             aHider.Visibility = Visibility.Collapsed;

@@ -369,25 +369,25 @@
                     <ColumnDefinition/>
                 </Grid.ColumnDefinitions>
 
-                <Rectangle x:Name="aBack_NB"  Grid.Column="0" Grid.RowSpan="2">
+                <Rectangle x:Name="aBack_P"  Grid.Column="0" Grid.RowSpan="2">
                     <Rectangle.Fill>
                         <SolidColorBrush Color="{DynamicResource aColor}"/>
                     </Rectangle.Fill>
                 </Rectangle>
 
-                <Rectangle x:Name="bBack_NB" Grid.Column="1" Grid.RowSpan="2">
+                <Rectangle x:Name="bBack_P" Grid.Column="1" Grid.RowSpan="2">
                     <Rectangle.Fill>
                         <SolidColorBrush Color="{DynamicResource bColor}"/>
                     </Rectangle.Fill>
                 </Rectangle>
 
-                <Rectangle x:Name="bDarkBack_NB" Grid.Column="1" Grid.Row="1">
+                <Rectangle x:Name="bDarkBack_P" Grid.Column="1" Grid.Row="1">
                     <Rectangle.Fill>
                         <SolidColorBrush Color="{DynamicResource bColorDark}"/>
                     </Rectangle.Fill>
                 </Rectangle>
 
-                <Rectangle x:Name="aDarkBack_NB" Grid.Column="0" Grid.Row="1">
+                <Rectangle x:Name="aDarkBack_P" Grid.Column="0" Grid.Row="1">
                     <Rectangle.Fill>
                         <SolidColorBrush Color="{DynamicResource aColorDark}"/>
                     </Rectangle.Fill>
@@ -411,7 +411,7 @@
                     </Button.Background>
                 </Button>
 
-                <Button x:Name="Back_NB" Grid.Row="0" Style= "{StaticResource A Hover}"  Grid.Column="0" Height="45" Margin="10,10,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Width="65" ToolTip="Back" Click="Back_NB_Click" Background="#00DDDDDD" Panel.ZIndex="1">
+                <Button x:Name="Back_P" Grid.Row="0" Style= "{StaticResource A Hover}"  Grid.Column="0" Height="45" Margin="10,10,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Width="65" ToolTip="Back" Click="Back_P_Click" Background="#00DDDDDD" Panel.ZIndex="1">
                     <ed:BlockArrow Height="27" Orientation="Left" Width="45" HorizontalAlignment="Center" VerticalAlignment="Center">
                         <ed:BlockArrow.Fill>
                             <SolidColorBrush Color="{DynamicResource lightColor}"/>
@@ -423,11 +423,11 @@
 
                 <ScrollViewer x:Name="aScroll_P"  VerticalScrollBarVisibility="Auto">
 
-                    <StackPanel x:Name="aDisplay_NB" Grid.Column="0" Margin="0,45,0,0">
+                    <StackPanel x:Name="aDisplay_P" Grid.Column="0" Margin="0,45,0,0">
 
-                        <Image x:Name="aCover_NB" Margin="34,15" Height="200" VerticalAlignment="Top"/>
+                        <Image x:Name="aCover_P" Margin="34,15" Height="200" VerticalAlignment="Top"/>
 
-                        <TextBlock x:Name="aInfo_NB"  Text="aMeta" TextWrapping="Wrap" Foreground="White" FontSize="16" FontWeight="Bold" Margin="35,15"  ScrollViewer.CanContentScroll="True" TextAlignment="Center" ToolTip="Right Click to Open 'A' in Explorer" MouseRightButtonDown="aFileLocation"/>
+                        <TextBlock x:Name="aInfo_P"  Text="aMeta" TextWrapping="Wrap" Foreground="White" FontSize="16" FontWeight="Bold" Margin="35,15"  ScrollViewer.CanContentScroll="True" TextAlignment="Center" ToolTip="Right Click to Open 'A' in Explorer" MouseRightButtonDown="aFileLocation"/>
 
                     </StackPanel>
 
@@ -445,11 +445,11 @@
 
                 <ScrollViewer x:Name="bScroll_P" VerticalScrollBarVisibility="Auto" Grid.Column="1">
 
-                    <StackPanel x:Name="bDisplay_NB" Grid.Column="1" Margin="0,45,0,0">
+                    <StackPanel x:Name="bDisplay_P" Grid.Column="1" Margin="0,45,0,0">
 
-                        <Image x:Name="bCover_NB" Margin="34,15" Height="200" VerticalAlignment="Top"/>
+                        <Image x:Name="bCover_P" Margin="34,15" Height="200" VerticalAlignment="Top"/>
 
-                        <TextBlock x:Name="bInfo_NB"  Text="bMeta" TextWrapping="Wrap" Foreground="White" FontSize="16" FontWeight="Bold" Margin="35,15,35,15"  ScrollViewer.CanContentScroll="True" TextAlignment="Center" ToolTip="Right Click to Open 'B' in Explorer" MouseRightButtonDown="bFileLocation" ScrollViewer.VerticalScrollBarVisibility="Auto"/>
+                        <TextBlock x:Name="bInfo_P"  Text="bMeta" TextWrapping="Wrap" Foreground="White" FontSize="16" FontWeight="Bold" Margin="35,15,35,15"  ScrollViewer.CanContentScroll="True" TextAlignment="Center" ToolTip="Right Click to Open 'B' in Explorer" MouseRightButtonDown="bFileLocation" ScrollViewer.VerticalScrollBarVisibility="Auto"/>
 
                     </StackPanel>
                 </ScrollViewer>

@@ -281,7 +281,7 @@
 
                         <Image x:Name="aCover" Margin="35,25,33,25" Height="250" VerticalAlignment="Top"/>
 
-                        <TextBlock x:Name="aInfo"  TextWrapping="Wrap" Foreground="White" FontSize="16" FontWeight="Bold" Margin="35,25" Height="150"  ScrollViewer.CanContentScroll="True" TextAlignment="Center"/>
+                        <TextBlock x:Name="aInfo"  TextWrapping="Wrap" Foreground="White" FontSize="16" FontWeight="Bold" Margin="35,25" Height="150"  ScrollViewer.CanContentScroll="True" TextAlignment="Center" VerticalAlignment="Center"/>
 
                         <Button x:Name="aReselect" Content="Reselect" Height="36" Margin="105.5,0,104.5,75" VerticalAlignment="Bottom" Click="A_Click"/>
 

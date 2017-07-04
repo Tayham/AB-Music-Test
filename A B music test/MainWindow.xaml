@@ -8,7 +8,7 @@
         xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity" xmlns:ei="http://schemas.microsoft.com/expression/2010/interactions" xmlns:ed="http://schemas.microsoft.com/expression/2010/drawing" x:Class="A_B_music_test.MainWindow"
         mc:Ignorable="d"
 
-        Height="650" Width="650">
+        Height="650" Width="650" MinWidth="600">
 
     <Window.Resources>
 
@@ -78,38 +78,6 @@
                 </EasingDoubleKeyFrame>
             </DoubleAnimationUsingKeyFrames>
 
-            <!--<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[2].(RotateTransform.Angle)" Storyboard.TargetName="Seperator">
-                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="90">
-                    <EasingDoubleKeyFrame.EasingFunction>
-                        <PowerEase EasingMode="EaseIn"/>
-                    </EasingDoubleKeyFrame.EasingFunction>
-                </EasingDoubleKeyFrame>
-            </DoubleAnimationUsingKeyFrames>-->
-
-            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="aDisplay">
-                <EasingDoubleKeyFrame KeyTime="0:0:0.7" Value="0">
-                    <EasingDoubleKeyFrame.EasingFunction>
-                        <QuarticEase EasingMode="EaseOut"/>
-                    </EasingDoubleKeyFrame.EasingFunction>
-                </EasingDoubleKeyFrame>
-            </DoubleAnimationUsingKeyFrames>
-
-            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="aDisplay">
-                <DiscreteObjectKeyFrame KeyTime="0:0:0.7" Value="{x:Static Visibility.Collapsed}"/>
-            </ObjectAnimationUsingKeyFrames>
-
-            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="bDisplay">
-                <EasingDoubleKeyFrame KeyTime="0:0:0.7" Value="0">
-                    <EasingDoubleKeyFrame.EasingFunction>
-                        <QuarticEase EasingMode="EaseOut"/>
-                    </EasingDoubleKeyFrame.EasingFunction>
-                </EasingDoubleKeyFrame>
-            </DoubleAnimationUsingKeyFrames>
-
-            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="bDisplay">
-                <DiscreteObjectKeyFrame KeyTime="0:0:0.7" Value="{x:Static Visibility.Collapsed}"/>
-            </ObjectAnimationUsingKeyFrames>
-
             <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="Blind">
                 <DiscreteObjectKeyFrame KeyTime="0:0:1" Value="{x:Static Visibility.Visible}"/>
             </ObjectAnimationUsingKeyFrames>
@@ -160,6 +128,26 @@
                     </EasingDoubleKeyFrame.EasingFunction>
                 </EasingDoubleKeyFrame>
             </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="aScroll">
+                <EasingDoubleKeyFrame KeyTime="0:0:0.7" Value="0">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <QuarticEase EasingMode="EaseOut"/>
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+            </DoubleAnimationUsingKeyFrames>
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="aScroll">
+                <DiscreteObjectKeyFrame KeyTime="0:0:0.7" Value="{x:Static Visibility.Collapsed}"/>
+            </ObjectAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="bScroll">
+                <EasingDoubleKeyFrame KeyTime="0:0:0.7" Value="0">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <QuarticEase EasingMode="EaseOut"/>
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+            </DoubleAnimationUsingKeyFrames>
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="bScroll">
+                <DiscreteObjectKeyFrame KeyTime="0:0:0.7" Value="{x:Static Visibility.Collapsed}"/>
+            </ObjectAnimationUsingKeyFrames>
         </Storyboard>
 
         <Storyboard x:Key="ABtoBlind_Reverse">
@@ -181,48 +169,6 @@
                     </EasingDoubleKeyFrame.EasingFunction>
                 </EasingDoubleKeyFrame>
             </DoubleAnimationUsingKeyFrames>
-
-            <!--<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[2].(RotateTransform.Angle)" Storyboard.TargetName="Seperator">
-                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="90">
-                    <EasingDoubleKeyFrame.EasingFunction>
-                        <PowerEase EasingMode="EaseIn"/>
-                    </EasingDoubleKeyFrame.EasingFunction>
-                </EasingDoubleKeyFrame>
-            </DoubleAnimationUsingKeyFrames>-->
-
-            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="aDisplay">
-                <SplineDoubleKeyFrame KeyTime="0:0:1" Value="0"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:1.5" Value="1">
-                    <EasingDoubleKeyFrame.EasingFunction>
-                        <PowerEase EasingMode="EaseIn"/>
-                    </EasingDoubleKeyFrame.EasingFunction>
-                </EasingDoubleKeyFrame>
-            </DoubleAnimationUsingKeyFrames>
-
-            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="aDisplay">
-                <DiscreteObjectKeyFrame KeyTime="0:0:1">
-                    <DiscreteObjectKeyFrame.Value>
-                        <Visibility>Visible</Visibility>
-                    </DiscreteObjectKeyFrame.Value>
-                </DiscreteObjectKeyFrame>
-            </ObjectAnimationUsingKeyFrames>
-
-            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="bDisplay">
-                <SplineDoubleKeyFrame KeyTime="0:0:1" Value="0"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:1.5" Value="1">
-                    <EasingDoubleKeyFrame.EasingFunction>
-                        <PowerEase EasingMode="EaseIn"/>
-                    </EasingDoubleKeyFrame.EasingFunction>
-                </EasingDoubleKeyFrame>
-            </DoubleAnimationUsingKeyFrames>
-
-            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="bDisplay">
-                <DiscreteObjectKeyFrame KeyTime="0:0:1">
-                    <DiscreteObjectKeyFrame.Value>
-                        <Visibility>Visible</Visibility>
-                    </DiscreteObjectKeyFrame.Value>
-                </DiscreteObjectKeyFrame>
-            </ObjectAnimationUsingKeyFrames>
 
             <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="Blind">
                 <DiscreteObjectKeyFrame KeyTime="0:0:0.7" Value="{x:Static Visibility.Collapsed}"/>
@@ -249,11 +195,6 @@
                 <SplineDoubleKeyFrame KeyTime="0:0:0.7" Value="0"/>
             </DoubleAnimationUsingKeyFrames>
 
-            <!--<PointAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransformOrigin)" Storyboard.TargetName="Confirm">
-                <SplinePointKeyFrame KeyTime="0:0:0.8" Value="0.5,0.5"/>
-                <SplinePointKeyFrame KeyTime="0:0:1.5" Value="0,0"/>
-            </PointAnimationUsingKeyFrames>-->
-
             <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="Confirm">
                 <SplineDoubleKeyFrame KeyTime="0:0:0.8" Value="50"/>
                 <EasingDoubleKeyFrame KeyTime="0:0:1.5" Value="0">
@@ -262,14 +203,37 @@
                     </EasingDoubleKeyFrame.EasingFunction>
                 </EasingDoubleKeyFrame>
             </DoubleAnimationUsingKeyFrames>
-        </Storyboard>
-
-        <!--<Storyboard x:Key="timerCircle" AutoReverse="True" RepeatBehavior="Forever">
-            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(wpfTool:Pie.EndAngle)" Storyboard.TargetName="pie">
-                <EasingDoubleKeyFrame KeyTime="0" Value="360"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:5" Value="0"/>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="aScroll">
+                <SplineDoubleKeyFrame KeyTime="0:0:1" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1.5" Value="1">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <PowerEase EasingMode="EaseIn"/>
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
             </DoubleAnimationUsingKeyFrames>
-        </Storyboard>-->
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="aScroll">
+                <DiscreteObjectKeyFrame KeyTime="0:0:1">
+                    <DiscreteObjectKeyFrame.Value>
+                        <Visibility>Visible</Visibility>
+                    </DiscreteObjectKeyFrame.Value>
+                </DiscreteObjectKeyFrame>
+            </ObjectAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="bScroll">
+                <SplineDoubleKeyFrame KeyTime="0:0:1" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1.5" Value="1">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <PowerEase EasingMode="EaseIn"/>
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+            </DoubleAnimationUsingKeyFrames>
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="bScroll">
+                <DiscreteObjectKeyFrame KeyTime="0:0:1">
+                    <DiscreteObjectKeyFrame.Value>
+                        <Visibility>Visible</Visibility>
+                    </DiscreteObjectKeyFrame.Value>
+                </DiscreteObjectKeyFrame>
+            </ObjectAnimationUsingKeyFrames>
+        </Storyboard>
 
     </Window.Resources>
 
@@ -284,7 +248,6 @@
                     <RowDefinition/>
                     <RowDefinition/>
                 </Grid.RowDefinitions>
-
                 <Rectangle x:Name="aBack" Grid.Column="0" Grid.RowSpan="2" RenderTransformOrigin="1,0.5" Margin="-500,-500,0,-500" StrokeThickness="0">
                     <Rectangle.Fill>
                         <SolidColorBrush Color="{DynamicResource aColor}"/>
@@ -313,34 +276,30 @@
                     </Rectangle.RenderTransform>
                 </Rectangle>
 
+                <ScrollViewer x:Name="aScroll" VerticalScrollBarVisibility="Auto" Grid.RowSpan="2">
+                    <StackPanel x:Name="aDisplay" Grid.Column="0" Grid.RowSpan="2">
 
-                <StackPanel x:Name="aDisplay" Grid.Column="0" Grid.RowSpan="2">
+                        <Image x:Name="aCover" Margin="35,25,33,25" Height="250" VerticalAlignment="Top"/>
 
-                    <Image x:Name="aCover" Margin="35,25,33,25" Height="250" VerticalAlignment="Top"/>
+                        <TextBlock x:Name="aInfo"  TextWrapping="Wrap" Foreground="White" FontSize="16" FontWeight="Bold" Margin="35,25" Height="150"  ScrollViewer.CanContentScroll="True" TextAlignment="Center" VerticalAlignment="Center"/>
 
-                    <TextBlock x:Name="aInfo"  TextWrapping="Wrap" Foreground="White" FontSize="16" FontWeight="Bold" Margin="35,25,36,25" Height="150"  ScrollViewer.CanContentScroll="True" TextAlignment="Center"/>
+                        <Button x:Name="aReselect" Content="Reselect" Height="36" Margin="105.5,0,104.5,75" VerticalAlignment="Bottom" Click="A_Click"/>
 
-                    <Button x:Name="aReselect" Visibility="Collapsed" Content="Reselect" Height="36" Margin="105.5,0,104.5,10" VerticalAlignment="Bottom" Click="A_Click">
-                        <!--<Button.Foreground>
-                    <SolidColorBrush Color="{DynamicResource darkColor}"/>
-                </Button.Foreground>-->
-                    </Button>
+                    </StackPanel>
+                </ScrollViewer>
 
-                </StackPanel>
+                <ScrollViewer x:Name="bScroll" VerticalScrollBarVisibility="Auto" Grid.Column="1" Grid.RowSpan="2">
+                    <StackPanel x:Name="bDisplay" Grid.Column="1" Grid.RowSpan="2">
 
-                <StackPanel x:Name="bDisplay" Grid.Column="1" Grid.RowSpan="2">
+                        <Image x:Name="bCover" Margin="35,25,33,25" Height="250" VerticalAlignment="Top"/>
 
-                    <Image x:Name="bCover" Margin="35,25,33,25" Height="250" VerticalAlignment="Top"/>
+                        <TextBlock x:Name="bInfo" TextWrapping="Wrap" Foreground="White" FontSize="16" FontWeight="Bold" Margin="35,25" Height="150"  ScrollViewer.CanContentScroll="True" TextAlignment="Center" VerticalAlignment="Center"/>
 
-                    <TextBlock x:Name="bInfo" TextWrapping="Wrap" Foreground="White" FontSize="16" FontWeight="Bold" Margin="35,25,36,25" Height="150"  ScrollViewer.CanContentScroll="True" TextAlignment="Center" VerticalAlignment="Center"/>
+                        <Button x:Name="bReselect" Content="Reselect" Height="36" Margin="105.5,0,104.5,75" VerticalAlignment="Bottom" Grid.Column="1" Click="B_Click"/>
 
-                    <Button x:Name="bReselect" Visibility="Collapsed" Content="Reselect" Height="36" Margin="105.5,0,104.5,10" VerticalAlignment="Bottom" Grid.Column="1" Click="B_Click">
-                        <!--<Button.Foreground>
-                    <SolidColorBrush Color="{DynamicResource darkColor}"/>
-                </Button.Foreground>-->
-                    </Button>
+                    </StackPanel>
+                </ScrollViewer>
 
-                </StackPanel>
                 <Button x:Name="Confirm" BorderThickness="0" Content="Confirm" Grid.ColumnSpan="2" Grid.Row="1" Height="50" Margin="0,0,0,0" VerticalAlignment="Bottom" FontSize="29.333" Visibility="Collapsed" Panel.ZIndex="1">
                     <Button.RenderTransform>
                         <TransformGroup>
@@ -378,11 +337,12 @@
                     </Button.Background>
                 </Button>
 
-                <Button x:Name="Blind" Style= "{StaticResource A Hover}"  Content="Blind" Visibility="Collapsed" Grid.Row="0" Grid.ColumnSpan="2" Background="#00000000" Click="Blind_Click" FontSize="48" ToolTip="Audio file information is NOT shown"/>
+                <Button x:Name="Blind" Style= "{StaticResource A Hover}"  Content="Blind" Visibility="Collapsed" Grid.Row="0" Grid.ColumnSpan="2" Background="#00000000" Click="Blind_Click" FontSize="48" ToolTip="To prevent listener bias audio file information is NOT shown and A/B is randomly assigned."/>
+                <!--<TextBlock x:Name="blindDescription" Grid.Row="0" Grid.ColumnSpan="2" Text="To prevent listener bias audio file information is NOT shown and A/B is randomly assigned." HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,125,0,0" Width="300" TextWrapping="Wrap" FontSize="14.667" TextAlignment="Center"/>-->
 
                 <Button x:Name="notBlind" Style= "{StaticResource B Hover}"  Grid.Row="1" Visibility="Collapsed"  Grid.ColumnSpan="2" Background="#00000000" Click="notBlind_Click" Content="Not Blind" FontSize="48" ToolTip="Audio file information is shown"/>
 
-                <Button x:Name="Back" Grid.Row="0" Style= "{StaticResource A Hover}"  Visibility="Collapsed"  Grid.Column="0" Height="43" Margin="10,10,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Width="64.993" Background="#00DDDDDD" ToolTip="Back">
+                <Button x:Name="Back" Grid.Row="0" Style= "{StaticResource A Hover}"  Visibility="Collapsed"  Grid.Column="0" Height="45" Margin="10,10,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Width="65" Background="#00DDDDDD" ToolTip="Back">
                     <i:Interaction.Triggers>
                         <i:EventTrigger EventName="Click">
                             <ei:ControlStoryboardAction Storyboard="{StaticResource ABtoBlind_Reverse}"/>
@@ -394,155 +354,190 @@
                         </ed:BlockArrow.Fill>
                     </ed:BlockArrow>
                 </Button>
-
-                <!--<Rectangle x:Name="Seperator" Width="21" Visibility="Collapsed" Grid.ColumnSpan="2" Grid.RowSpan="2" HorizontalAlignment="Center" VerticalAlignment="Center" Height="600" RenderTransformOrigin="0.5,0.5">
-            <Rectangle.Fill>
-                <SolidColorBrush Color="{DynamicResource darkColor}"/>
-            </Rectangle.Fill>
-            <Rectangle.RenderTransform>
-                <TransformGroup>
-                    <ScaleTransform/>
-                    <SkewTransform/>
-                    <RotateTransform/>
-                    <TranslateTransform/>
-                </TransformGroup>
-            </Rectangle.RenderTransform>
-        </Rectangle>-->
             </Grid>
         </TabItem>
-        <TabItem x:Name="notBlindTab" Margin="0" Visibility="Collapsed" ScrollViewer.VerticalScrollBarVisibility="Auto">
-            <ScrollViewer HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto">
-                <Grid Margin="0">
-                    <Grid.RowDefinitions>
-                        <RowDefinition Height="8*" />
-                        <RowDefinition Height="75" />
-                    </Grid.RowDefinitions>
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition />
-                        <ColumnDefinition />
-                    </Grid.ColumnDefinitions>
 
-                    <Rectangle x:Name="aBack_NB"  Grid.Column="0">
-                        <Rectangle.Fill>
-                            <SolidColorBrush Color="{DynamicResource aColor}"/>
-                        </Rectangle.Fill>
-                    </Rectangle>
+        <TabItem x:Name="player" Margin="0" Visibility="Collapsed" ScrollViewer.VerticalScrollBarVisibility="Auto">
+            <Grid Margin="0">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="8*" />
+                    <RowDefinition Height="100"/>
+                    <RowDefinition Height="75" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
 
-                    <Rectangle x:Name="bBack_NB" Grid.Column="1">
-                        <Rectangle.Fill>
-                            <SolidColorBrush Color="{DynamicResource bColor}"/>
-                        </Rectangle.Fill>
-                    </Rectangle>
+                <Rectangle x:Name="aBack_P"  Grid.Column="0" Grid.RowSpan="2">
+                    <Rectangle.Fill>
+                        <SolidColorBrush Color="{DynamicResource aColor}"/>
+                    </Rectangle.Fill>
+                </Rectangle>
 
-                    <Button x:Name="Back_NB" Grid.Row="0" Style= "{StaticResource A Hover}"  Grid.Column="0" Height="43" Margin="10,10,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Width="64.993" Background="#00DDDDDD" ToolTip="Back" Click="Back_NB_Click">
-                        <ed:BlockArrow Height="27" Orientation="Left" Width="45" HorizontalAlignment="Center" VerticalAlignment="Center">
-                            <ed:BlockArrow.Fill>
-                                <SolidColorBrush Color="{DynamicResource lightColor}"/>
-                            </ed:BlockArrow.Fill>
-                        </ed:BlockArrow>
-                    </Button>
+                <Rectangle x:Name="bBack_P" Grid.Column="1" Grid.RowSpan="2">
+                    <Rectangle.Fill>
+                        <SolidColorBrush Color="{DynamicResource bColor}"/>
+                    </Rectangle.Fill>
+                </Rectangle>
+
+                <Rectangle x:Name="bDarkBack_P" Grid.Column="1" Grid.Row="1">
+                    <Rectangle.Fill>
+                        <SolidColorBrush Color="{DynamicResource bColorDark}"/>
+                    </Rectangle.Fill>
+                </Rectangle>
+
+                <Rectangle x:Name="aDarkBack_P" Grid.Column="0" Grid.Row="1">
+                    <Rectangle.Fill>
+                        <SolidColorBrush Color="{DynamicResource aColorDark}"/>
+                    </Rectangle.Fill>
+                </Rectangle>
+
+                <Button x:Name="bHider" Style ="{StaticResource B Hover}" Content="B" Grid.Column="1" FontSize="96" FontWeight="Bold" ToolTip="Click to reveal &quot;B&quot;" Click="bHider_Click" Visibility="Collapsed" Panel.ZIndex="1">
+                    <Button.Foreground>
+                        <SolidColorBrush Color="{DynamicResource darkColor}"/>
+                    </Button.Foreground>
+                    <Button.Background>
+                        <SolidColorBrush Color="{DynamicResource bColor}"/>
+                    </Button.Background>
+                </Button>
+
+                <Button x:Name="aHider"  Style= "{StaticResource A Hover}"  Grid.Column="0" FontSize="96" FontWeight="Bold" ToolTip="Click to reveal &quot;A&quot;" Click="aHider_Click" Content="A" Margin="0" Visibility="Collapsed" Panel.ZIndex="1">
+                    <Button.Foreground>
+                        <SolidColorBrush Color="{DynamicResource darkColor}"/>
+                    </Button.Foreground>
+                    <Button.Background>
+                        <SolidColorBrush Color="{DynamicResource aColor}"/>
+                    </Button.Background>
+                </Button>
+
+                <Button x:Name="Back_P" Grid.Row="0" Style= "{StaticResource A Hover}"  Grid.Column="0" Height="45" Margin="10,10,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Width="65" ToolTip="Back" Click="Back_P_Click" Background="#00DDDDDD" Panel.ZIndex="1">
+                    <ed:BlockArrow Height="27" Orientation="Left" Width="45" HorizontalAlignment="Center" VerticalAlignment="Center">
+                        <ed:BlockArrow.Fill>
+                            <SolidColorBrush Color="{DynamicResource lightColor}"/>
+                        </ed:BlockArrow.Fill>
+                    </ed:BlockArrow>
+                </Button>
 
 
 
-                    <StackPanel x:Name="aDisplay_NB" Grid.Column="0" Margin="0,45,0,0">
+                <ScrollViewer x:Name="aScroll_P"  VerticalScrollBarVisibility="Auto">
 
-                        <Image x:Name="aCover_NB" Margin="34,15" Height="200" VerticalAlignment="Top"/>
+                    <StackPanel x:Name="aDisplay_P" Grid.Column="0" Margin="0,45,0,0">
 
-                        <TextBlock x:Name="aInfo_NB"  Text="aMeta" TextWrapping="Wrap" Foreground="White" FontSize="16" FontWeight="Bold" Margin="35,15,36,15" Height="125"  ScrollViewer.CanContentScroll="True" TextAlignment="Center" ToolTip="Right Click to Open 'A' in Explorer" MouseRightButtonDown="aFileLocation"/>
+                        <Image x:Name="aCover_P" Margin="34,15" Height="200" VerticalAlignment="Top"/>
 
-                        <Slider x:Name="aVolume" ValueChanged="aVolume_ValueChanged" Minimum="0" Maximum="1" Value="0.5" MaxWidth="500" Margin="35,0,35,15" RenderTransformOrigin="0.5,0.5" ToolTip="'A' Volume"/>
+                        <TextBlock x:Name="aInfo_P"  Text="aMeta" TextWrapping="Wrap" Foreground="White" FontSize="16" FontWeight="Bold" Margin="35,15"  ScrollViewer.CanContentScroll="True" TextAlignment="Center" ToolTip="Right Click to Open 'A' in Explorer" MouseRightButtonDown="aFileLocation"/>
 
-                        <RadioButton x:Name="aIndicator" Content="Play A First" Margin="0,15" Grid.Row="0" Grid.Column="0" IsChecked="True" Foreground="White" FontWeight="Bold" Width="100" Height="15" GroupName="Currently Playing"/>
                     </StackPanel>
 
-                    <StackPanel x:Name="bDisplay_NB" Grid.Column="1" Margin="0,45,0,0">
+                </ScrollViewer>
 
-                        <Image x:Name="bCover_NB" Margin="34,15" Height="200" VerticalAlignment="Top"/>
+                <StackPanel x:Name="aControl" Grid.Row="1" VerticalAlignment="Center" Margin="0,15">
 
-                        <TextBlock x:Name="bInfo_NB"  Text="bMeta" TextWrapping="Wrap" Foreground="White" FontSize="16" FontWeight="Bold" Margin="35,15,36,15" Height="125"  ScrollViewer.CanContentScroll="True" TextAlignment="Center" ToolTip="Right Click to Open 'B' in Explorer" MouseRightButtonDown="bFileLocation"/>
+                    <Slider x:Name="aVolume" ValueChanged="aVolume_ValueChanged" Minimum="0" Maximum="1" Value="0.5" MaxWidth="500" Margin="35,0,35,20" RenderTransformOrigin="0.5,0.5" ToolTip="'A' Volume" Height="15" VerticalAlignment="Bottom"/>
 
-                        <Slider x:Name="bVolume" ValueChanged="bVolume_ValueChanged" Minimum="0" Maximum="1" Value="0.5" MaxWidth="500" Margin="35,0,35,15" RenderTransformOrigin="0.5,0.5" ToolTip="'B' Volume"/>
+                    <RadioButton x:Name="aIndicator" Content="Play A First" IsChecked="True" Foreground="White" FontWeight="Bold" Width="100" Height="16" GroupName="Currently Playing" VerticalAlignment="Center" VerticalContentAlignment="Center" Padding="0" HorizontalContentAlignment="Center" HorizontalAlignment="Center"/>
 
-                        <RadioButton x:Name="bIndicator" Content="Play B First" Margin="0,15" Grid.Row="0" Grid.Column="1" Foreground="White" FontWeight="Bold" Width="100" Height="15" GroupName="Currently Playing"/>
+                </StackPanel>
+
+
+
+                <ScrollViewer x:Name="bScroll_P" VerticalScrollBarVisibility="Auto" Grid.Column="1">
+
+                    <StackPanel x:Name="bDisplay_P" Grid.Column="1" Margin="0,45,0,0">
+
+                        <Image x:Name="bCover_P" Margin="34,15" Height="200" VerticalAlignment="Top"/>
+
+                        <TextBlock x:Name="bInfo_P"  Text="bMeta" TextWrapping="Wrap" Foreground="White" FontSize="16" FontWeight="Bold" Margin="35,15,35,15"  ScrollViewer.CanContentScroll="True" TextAlignment="Center" ToolTip="Right Click to Open 'B' in Explorer" MouseRightButtonDown="bFileLocation" ScrollViewer.VerticalScrollBarVisibility="Auto"/>
+
                     </StackPanel>
+                </ScrollViewer>
 
-                    <ToggleButton x:Name="playPause" Checked="play" Unchecked="pause" Margin="36,0,0,0"  
-                      Grid.Row="1" Grid.Column="0" HorizontalAlignment="Left" Width="45" Height="45" VerticalAlignment="Center" ToolTip="Right Click to Stop" MouseRightButtonUp="stop">
+                <StackPanel x:Name="bControl" Grid.Column="1"  Grid.Row="1" VerticalAlignment="Center" Margin="0,5">
 
-                        <ToggleButton.Style>
-                            <Style TargetType="ToggleButton">
-                                <Setter Property="Template">
-                                    <Setter.Value>
-                                        <ControlTemplate TargetType="{x:Type ToggleButton}">
-                                            <Grid>
+                    <Slider x:Name="bVolume" ValueChanged="bVolume_ValueChanged" Minimum="0" Maximum="1" Value="0.5" MaxWidth="500" Margin="35,0,35,20" RenderTransformOrigin="0.5,0.5" ToolTip="'B' Volume" Height="15" VerticalAlignment="Bottom"/>
 
-                                                <Viewbox Margin="0" VerticalAlignment="Center" Height="Auto" Width="Auto" HorizontalAlignment="Center">
-                                                    <Polygon x:Name="playShape" Points="0,0 45,25 0,50" Fill = "{TemplateBinding Foreground}"/>
-                                                </Viewbox>
+                    <RadioButton x:Name="bIndicator" Content="Play B First" IsChecked="False" Foreground="White" FontWeight="Bold" Width="100" GroupName="Currently Playing" VerticalAlignment="Center" Padding="0" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Height="16"/>
 
-                                                <StackPanel x:Name="pauseShape" Orientation="Horizontal" Margin="0" Visibility="Hidden">
+                </StackPanel>
 
-                                                    <Rectangle x:Name="pause1" HorizontalAlignment="Left" VerticalAlignment="Stretch" Width="12" Height="Auto" Fill = "{TemplateBinding Foreground}" Panel.ZIndex="0"/>
-                                                    <Rectangle Width="12" Fill="#00000000" />
-                                                    <Rectangle x:Name="pause2" HorizontalAlignment="Left" VerticalAlignment="Stretch" Width="12" Height="Auto" Fill = "{TemplateBinding Foreground}" Panel.ZIndex="1"/>
-                                                </StackPanel>
+                <ToggleButton x:Name="playPause" Checked="play" Unchecked="pause" Margin="36,0,0,0"  
+                      Grid.Row="2" Grid.Column="0" HorizontalAlignment="Left" Width="45" Height="45" VerticalAlignment="Center" ToolTip="Right Click to Stop" MouseRightButtonUp="stop">
 
-                                            </Grid>
+                    <ToggleButton.Style>
+                        <Style TargetType="ToggleButton">
+                            <Setter Property="Template">
+                                <Setter.Value>
+                                    <ControlTemplate TargetType="{x:Type ToggleButton}">
+                                        <Grid>
 
-                                            <ControlTemplate.Triggers>
+                                            <Viewbox Margin="0" VerticalAlignment="Center" Height="Auto" Width="Auto" HorizontalAlignment="Center">
+                                                <Polygon x:Name="playShape" Points="0,0 45,25 0,50" Fill = "{TemplateBinding Foreground}"/>
+                                            </Viewbox>
 
-                                                <DataTrigger Binding="{Binding IsChecked, ElementName=aIndicator}" Value="True">
-                                                    <Setter Property="Foreground">
-                                                        <Setter.Value>
-                                                            <SolidColorBrush Color="{StaticResource aColor}"/>
-                                                        </Setter.Value>
-                                                    </Setter>
-                                                </DataTrigger>
+                                            <StackPanel x:Name="pauseShape" Orientation="Horizontal" Margin="0" Visibility="Hidden">
 
-                                                <DataTrigger Binding="{Binding IsChecked, ElementName=aIndicator}" Value="False">
-                                                    <Setter Property="Foreground">
-                                                        <Setter.Value>
-                                                            <SolidColorBrush Color="{StaticResource bColor}"/>
-                                                        </Setter.Value>
-                                                    </Setter>
-                                                </DataTrigger>
+                                                <Rectangle x:Name="pause1" HorizontalAlignment="Left" VerticalAlignment="Stretch" Width="12" Height="Auto" Fill = "{TemplateBinding Foreground}" Panel.ZIndex="0"/>
+                                                <Rectangle Width="12" Fill="#00000000" />
+                                                <Rectangle x:Name="pause2" HorizontalAlignment="Left" VerticalAlignment="Stretch" Width="12" Height="Auto" Fill = "{TemplateBinding Foreground}" Panel.ZIndex="1"/>
+                                            </StackPanel>
 
-                                                <Trigger Property="IsChecked" Value="True">
-                                                    <Setter TargetName="playShape" Property="Visibility" Value="Hidden" />
-                                                    <Setter TargetName="pauseShape" Property="Visibility" Value="Visible" />
-                                                </Trigger>
+                                        </Grid>
 
-                                                <Trigger Property="IsChecked" Value="False">
-                                                    <Setter TargetName="playShape" Property="Visibility" Value="Visible" />
-                                                    <Setter TargetName="pauseShape" Property="Visibility" Value="Hidden" />
+                                        <ControlTemplate.Triggers>
 
-                                                </Trigger>
+                                            <DataTrigger Binding="{Binding IsChecked, ElementName=aIndicator}" Value="True">
+                                                <Setter Property="Foreground">
+                                                    <Setter.Value>
+                                                        <SolidColorBrush Color="{StaticResource aColor}"/>
+                                                    </Setter.Value>
+                                                </Setter>
+                                            </DataTrigger>
 
-                                                <Trigger Property="IsMouseOver" Value="True">
-                                                    <Setter Property="Opacity" Value=".6" />
-                                                </Trigger>
+                                            <DataTrigger Binding="{Binding IsChecked, ElementName=aIndicator}" Value="False">
+                                                <Setter Property="Foreground">
+                                                    <Setter.Value>
+                                                        <SolidColorBrush Color="{StaticResource bColor}"/>
+                                                    </Setter.Value>
+                                                </Setter>
+                                            </DataTrigger>
 
-                                            </ControlTemplate.Triggers>
-                                        </ControlTemplate>
-                                    </Setter.Value>
-                                </Setter>
-                            </Style>
-                        </ToggleButton.Style>
-                    </ToggleButton>
+                                            <Trigger Property="IsChecked" Value="True">
+                                                <Setter TargetName="playShape" Property="Visibility" Value="Hidden" />
+                                                <Setter TargetName="pauseShape" Property="Visibility" Value="Visible" />
+                                            </Trigger>
 
-                    <TextBlock Name="Progress" Text="No files selected..." Foreground="Black" Grid.Row="1" Grid.Column="0" Width="115" HorizontalAlignment="Right" VerticalAlignment="Center" />
-                    <StackPanel Orientation="Horizontal" Grid.Row="1" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" ToolTip="Rough Estimation of Time in Between the Switches" >
+                                            <Trigger Property="IsChecked" Value="False">
+                                                <Setter TargetName="playShape" Property="Visibility" Value="Visible" />
+                                                <Setter TargetName="pauseShape" Property="Visibility" Value="Hidden" />
 
-                        <TextBlock Foreground="Black" Grid.Row="1" Grid.Column="1" Height="25" VerticalAlignment="Center" HorizontalAlignment="Center" Width="70" Margin="0,8,0,0"  ><Run Text="Switch Delay"/></TextBlock>
+                                            </Trigger>
 
-                        <wpfTool:IntegerUpDown x:Name="switchDelayInput" ValueChanged="switchDelayInput_ValueChanged" Margin="0" Grid.Column="1" Grid.Row="4" DefaultValue="5" 
+                                            <Trigger Property="IsMouseOver" Value="True">
+                                                <Setter Property="Opacity" Value=".6" />
+                                            </Trigger>
+
+                                        </ControlTemplate.Triggers>
+                                    </ControlTemplate>
+                                </Setter.Value>
+                            </Setter>
+                        </Style>
+                    </ToggleButton.Style>
+                </ToggleButton>
+
+                <TextBlock Name="Progress" Text="No files selected..." Foreground="Black" Grid.Row="2" Grid.Column="0" Width="115" HorizontalAlignment="Right" VerticalAlignment="Center" />
+                <StackPanel Orientation="Horizontal" Grid.Row="2" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" ToolTip="Rough Estimation of Time in Between the Switches" >
+
+                    <TextBlock Foreground="Black" Grid.Row="1" Grid.Column="1" Height="25" VerticalAlignment="Center" HorizontalAlignment="Center" Width="70" Margin="0,8,0,0"  ><Run Text="Switch Delay"/></TextBlock>
+
+                    <wpfTool:IntegerUpDown x:Name="switchDelayInput" ValueChanged="switchDelayInput_ValueChanged" Margin="0" Grid.Column="1" Grid.Row="2" DefaultValue="5" 
                     		DisplayDefaultValueOnEmptyText="True" Minimum="1" Maximum="10" RenderTransformOrigin="0.5,0.5" VerticalAlignment="Center" HorizontalAlignment="Center" Height="30" Width="40"/>
-                    </StackPanel>
+                </StackPanel>
 
-                </Grid>
-            </ScrollViewer>
+            </Grid>
+
         </TabItem>
-
 
     </TabControl>
 </Window>

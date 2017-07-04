@@ -89,11 +89,11 @@ namespace A_B_music_test
 
         private void notBlind_Click(object sender, RoutedEventArgs e)
         {
-            tabControl1.SelectedItem = notBlindTab;
-            aInfo_NB.Text = aMusic.metadata;
-            bInfo_NB.Text = bMusic.metadata;
-            aCover_NB.Source = aMusic.cover;
-            bCover_NB.Source = bMusic.cover;
+            tabControl1.SelectedItem = player;
+            aInfo_P.Text = aMusic.metadata;
+            bInfo_P.Text = bMusic.metadata;
+            aCover_P.Source = aMusic.cover;
+            bCover_P.Source = bMusic.cover;
             aPlayer.Open(new Uri(aMusic.filePath));
             bPlayer.Open(new Uri(bMusic.filePath));
 
@@ -101,7 +101,34 @@ namespace A_B_music_test
 
         private void Blind_Click(object sender, RoutedEventArgs e)
         {
-            //tabControl1.SelectedItem = blindTab;
+            tabControl1.SelectedItem = player;
+            aHider.Visibility = Visibility.Visible;
+            bHider.Visibility = Visibility.Visible;
+            Random rnd = new Random();
+            int switchSelect = rnd.Next(0, 2);
+            switch (switchSelect)
+            {
+                case 0:
+                    Console.WriteLine("Case 0");
+                    aInfo_P.Text = aMusic.metadata;
+                    bInfo_P.Text = bMusic.metadata;
+                    aCover_P.Source = aMusic.cover;
+                    bCover_P.Source = bMusic.cover;
+                    aPlayer.Open(new Uri(aMusic.filePath));
+                    bPlayer.Open(new Uri(bMusic.filePath));
+                    break;
+                case 1:
+                    Console.WriteLine("Case 1");
+                    aMusic = new Music(bFile);
+                    bMusic = new Music(aFile);
+                    aInfo_P.Text = aMusic.metadata;
+                    bInfo_P.Text = bMusic.metadata;
+                    aCover_P.Source = aMusic.cover;
+                    bCover_P.Source = bMusic.cover;
+                    aPlayer.Open(new Uri(aMusic.filePath));
+                    bPlayer.Open(new Uri(bMusic.filePath));
+                    break;
+            }
         }
 
 
@@ -112,7 +139,7 @@ namespace A_B_music_test
             // Configure open file dialog box 
             OpenFileDialog dlg = new OpenFileDialog();
             dlg.DefaultExt = "*.mp3; *.m4a; *.wma; *.flac"; // Default file extension 
-            dlg.Filter = "Music Files|*.mp3;*.m4a;*.wma;*.flac|All files (*.*)|*.*"; // Filter files by extension
+            dlg.Filter = "Music Files|*.mp3;*.m4a;*.wma;*.flac"; // Filter files by extension
             dlg.Multiselect = false;
 
             // Show open file dialog box 
@@ -231,7 +258,7 @@ namespace A_B_music_test
             // their respective slider controls.
 
             aPlayer.Volume = aVolume.Value;
-            bPlayer.Volume = (double)bVolume.Value;
+            bPlayer.Volume = bVolume.Value;
         }
 
         public void InitTimer()
@@ -255,6 +282,10 @@ namespace A_B_music_test
 
                 if ((bool)aIndicator.IsChecked) //Switches from A to B
                 {
+                    if(bPlayer.Position >= bPlayer.NaturalDuration)
+                    {
+                        stop();
+                    }
                     aPlayer.Volume = 0;
                     aMusic.playing = false;
                     //bPlayer.Position = aPlayer.Position;
@@ -266,6 +297,10 @@ namespace A_B_music_test
                 }
                 else //Switches from B to A
                 {
+                    if (aPlayer.Position >= aPlayer.NaturalDuration)
+                    {
+                        stop();
+                    }
                     bPlayer.Volume = 0;
                     bMusic.playing = false;
                     //aPlayer.Position = bPlayer.Position;
@@ -296,9 +331,13 @@ namespace A_B_music_test
             switchDelay = (int)switchDelayInput.Value;
         }
 
-        private void Back_NB_Click(object sender, RoutedEventArgs e)
+        private void Back_P_Click(object sender, RoutedEventArgs e)
         {
             tabControl1.SelectedItem = mainTab;
+            aHider.Visibility = Visibility.Collapsed;
+            bHider.Visibility = Visibility.Collapsed;
+            aMusic = new Music(aFile);
+            bMusic = new Music(bFile);
             stop();
         }
 
@@ -311,5 +350,16 @@ namespace A_B_music_test
         {
             bMusic.openFileLocation();
         }
+
+        private void aHider_Click(object sender, RoutedEventArgs e)
+        {
+            aHider.Visibility = Visibility.Collapsed;
+        }
+
+        private void bHider_Click(object sender, RoutedEventArgs e)
+        {
+            bHider.Visibility = Visibility.Collapsed;
+        }
+
     }
 }

@@ -1,7 +1,7 @@
 ﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
                     xmlns:local="clr-namespace:A_B_music_test.Resources">
-
+    
     <Color x:Key="aColor">#FFF79F79</Color>
     <Color x:Key="aColorLight">#FFF9ba9f</Color>
     <Color x:Key="aColorDark">#FFF58656</Color>

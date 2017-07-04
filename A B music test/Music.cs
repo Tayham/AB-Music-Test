@@ -51,9 +51,9 @@ namespace A_B_music_test
         //method for displaying customer records (functionality)    
         public void print()
         {
-            Console.WriteLine("Filepath=" + filePath);
-            Console.WriteLine("Metadata=" + metadata);
-            Console.WriteLine("Is Playing=" + playing);
+            Debug.WriteLine("Filepath=" + filePath);
+            Debug.WriteLine("Metadata=" + metadata);
+            Debug.WriteLine("Is Playing=" + playing);
 
         }
 
@@ -61,9 +61,14 @@ namespace A_B_music_test
         private void extractMetadata()
         {
             TagLib.File tags = TagLib.File.Create(filePath);
+            Debug.WriteLine(tags.Properties.AudioBitrate);
+            //Bitrate = samplerate x bitdepth x channels
+            Debug.WriteLine(tags.Properties.AudioSampleRate);
+            Debug.WriteLine(tags.Properties.AudioChannels);
+            Debug.WriteLine(tags.Properties.BitsPerSample);
+
             this.metadata = tags.Tag.Title + "\r" + tags.Tag.JoinedPerformers + "\r" + tags.Properties.AudioBitrate +
-                 "kbps\r" + tags.Properties.Duration.Minutes + ":" +
-                 string.Format("{0:D2}", tags.Properties.Duration.Seconds);
+                 "kbps " + tags.Properties.AudioSampleRate + "Hz\r"+ tags.Properties.Duration.Minutes + ":" + string.Format("{0:D2}", tags.Properties.Duration.Seconds);
         }
 
         //Retrieves cover art (as a BitmapImage) from supplied filename
